@@ -13,5 +13,13 @@ class HelpService
     response += ">Lista as perguntas e respostas com aquela hashtag\n\n"
     response += "*Perguntas e Respostas*\n"
     response += ">Mostra a lista de perguntas e respostas\n\n"
+    response += "*Incluir o link*\n"
+    response += ">Adiciona um novo link\n\n"
+    response += "*Remova o link*\n"
+    response += ">Remove um link baseado no ID dele\n\n"
+    response += "*Pesquise a hashtag X*\n"
+    response += ">Lista os links com aquela hashtag\n\n"
+    response += "*Lista de links*\n"
+    response += ">Mostra a lista de links cadastrados\n\n"
   end
 end
