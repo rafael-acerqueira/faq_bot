@@ -6,8 +6,8 @@ module LinkModule
     end
 
     def call
-      link = Link.where(id: @id).last
-      return "Link inválido, verifique o Id" unless link
+      link = Link.find(@id)
+      return "Link inválido, verifique o ID" unless link
 
       Link.transaction do
         # Deleta as tags associadas que não estejam associadas a outros links

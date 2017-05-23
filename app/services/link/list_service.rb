@@ -12,7 +12,7 @@ module LinkModule
         links = Link.all
       end
 
-      response = "*Perguntas e Respostas* \n\n"
+      response = "*Lista de Links Salvos* \n\n"
       links.each do |l|
         response += "*#{l.id}* - "
         response += "*#{l.title}*\n"
