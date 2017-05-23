@@ -43,7 +43,6 @@ ActiveRecord::Schema.define(version: 20170523085831) do
   create_table "links", force: :cascade do |t|
     t.string "title"
     t.string "url"
-    t.string "hashtag"
   end
 
 end
