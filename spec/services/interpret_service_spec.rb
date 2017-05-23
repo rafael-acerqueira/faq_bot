@@ -195,7 +195,7 @@ describe InterpretService do
 
     it "With invalid ID, receive error message" do
       response = InterpretService.call('remove_link', {"id" => rand(1..9999)})
-      expect(response).to match("Link inválido, verifique o Id")
+      expect(response).to match("Link inválido, verifique o ID")
     end
   end
 end

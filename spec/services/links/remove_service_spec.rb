@@ -14,7 +14,7 @@ describe LinkModule::RemoveService do
       @removeService = LinkModule::RemoveService.new({"id" => rand(1..9999)})
       response = @removeService.call()
 
-      expect(response).to match("Link inválido, verifique o Id")
+      expect(response).to match("Link inválido, verifique o ID")
     end
   end
 end

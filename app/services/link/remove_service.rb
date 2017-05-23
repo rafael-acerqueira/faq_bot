@@ -6,7 +6,7 @@ module LinkModule
     end
 
     def call
-      link = Link.find(@id)
+      link = Link.find_by_id(@id)
       return "Link inválido, verifique o ID" unless link
 
       Link.transaction do
