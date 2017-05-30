@@ -8,6 +8,8 @@ module LinkModule
     def call
       if @action == "search"
         links = Link.search(@query)
+      elsif @action == "search_link_by_hashtag"
+        links = Link.all.select { |link| link.hashtags.pluck(:name).include?(@query)}
       else
         links = Link.all
       end
